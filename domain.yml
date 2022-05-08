@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - name
+  - weather
+  - eat
+  - compliment
+
+actions:
+  - action_weather_answering
+  - action_recommend
+
+entities:
+  - city_name
+  - day
+
+slots:
+  city_name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: city_name
+
+  day:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: day
+
+responses:
+  utter_greet:
+  - text: "Em chào anh/chị"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye anh/chị"
+
+  utter_iamabot:
+  - text: "Em là bot, thiết kế bởi anh Tien Anh Nguyen"
+
+  utter_name:
+  - text: "Em là Bianca ạ"
+
+  utter_compliment:
+    - text: "ngại quá đi :)))"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

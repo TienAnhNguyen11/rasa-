@@ -1,0 +1,10 @@
+[
+  {
+    "name": "city_name",
+    "pattern": "(\\bHanoi\\b|\\bHo\\ Chi\\ Minh\\b|\\bParis\\b|\\bBerlin\\b|\\bLondon\\b|\\bNew\\ York\\b)"
+  },
+  {
+    "name": "day",
+    "pattern": "(\\bhôm\\ nay\\b|\\bngày\\ mai\\b)"
+  }
+]

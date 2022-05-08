@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-city_name",
+      "2": "I-city_name",
+      "3": "L-city_name",
+      "4": "U-city_name",
+      "5": "B-day",
+      "6": "I-day",
+      "7": "L-day",
+      "8": "U-day",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-city_name": 1,
+      "I-city_name": 2,
+      "L-city_name": 3,
+      "U-city_name": 4,
+      "B-day": 5,
+      "I-day": 6,
+      "L-day": 7,
+      "U-day": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

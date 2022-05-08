@@ -1,0 +1,122 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hú
+    - ê
+    - alo
+    - em gì ơi
+
+- intent: goodbye
+  examples: |
+    - cu
+    - goodbye
+    - bye
+    - lượn đi em
+    - nghỉ nhé
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - ok
+    - ừ
+    - đc
+    - cũng đc
+    - tạm đc
+
+
+- intent: deny
+  examples: |
+    - no
+    - nhịn
+    - đéo
+    - dẹp
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: name
+  examples: |
+    - ai vậy
+    - em là ai
+    - em tên gì vậy
+    - cho biết quý danh đi
+
+- intent: eat
+  examples: |
+    - có món gì ngon k nhỉ
+    - hôm nay ăn gì được nhỉ
+    - chị đói
+
+- intent: compliment
+  examples: |
+    - em xinh nhỉ
+    - tên đẹp nhỉ
+    - dễ thương thế
+    - cute vậy
+
+- intent: weather
+  examples: |
+    - thời tiết [Hanoi]{"entity":"city_name"} [hôm nay]{"entity":"day"} thế nào
+    - [hôm nay]{"entity":"day"} thời tiết [Ho Chi Minh]{"entity":"city_name"} thế nào
+    - thời tiết [London]{"entity":"city_name"} [ngày mai]{"entity":"day"} thế nào
+    - [ngày mai]{"entity":"day"} thời tiết [Berlin]{"entity":"city_name"} thế nào
+    - thời tiết [Paris]{"entity":"city_name"} [hôm nay]{"entity":"day"} thế nào
+    - [ngày mai]{"entity":"day"} thời tiết [New York]{"entity":"city_name"} thế nào
+
+- lookup: city_name
+  examples: |
+    - Hanoi
+    - Ho Chi Minh
+    - Paris
+    - Berlin
+    - London
+    - New York
+
+- lookup: day
+  examples: |
+    - hôm nay
+    - ngày mai
